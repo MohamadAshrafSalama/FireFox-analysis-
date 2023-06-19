@@ -1,0 +1,15 @@
+*.csv
+data/
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.vscode/
+.idea/
+*.pkl
+*.pickle
+output/
+figures/
