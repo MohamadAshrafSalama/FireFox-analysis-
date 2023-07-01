@@ -78,7 +78,7 @@ def fetch_bugs(product="Firefox", component=None, start_date=None, end_date=None
 
     while True:
         params["offset"] = offset
-        resp = requests.get(f"{BUGZILLA_API}/bug", params=params, timeout=30)
+        resp = requests.get(f"{BUGZILLA_API}/bug", params=params, timeout=45)
         resp.raise_for_status()
         data = resp.json()
 
@@ -127,7 +127,7 @@ def fetch_bug_comments(bug_ids, batch_size=50):
             try:
                 resp = requests.get(
                     f"{BUGZILLA_API}/bug/{bug_id}/comment",
-                    timeout=30,
+                    timeout=45,
                 )
                 resp.raise_for_status()
                 data = resp.json()
@@ -177,7 +177,7 @@ def fetch_bug_history(bug_ids):
         try:
             resp = requests.get(
                 f"{BUGZILLA_API}/bug/{bug_id}/history",
-                timeout=30,
+                timeout=45,
             )
             resp.raise_for_status()
             data = resp.json()
