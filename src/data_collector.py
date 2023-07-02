@@ -102,7 +102,7 @@ def fetch_bugs(product="Firefox", component=None, start_date=None, end_date=None
     return df
 
 
-def fetch_bug_comments(bug_ids, batch_size=50):
+def fetch_bug_comments(bug_ids, batch_size=30):
     """
     Fetch comments for a list of bug IDs.
 
