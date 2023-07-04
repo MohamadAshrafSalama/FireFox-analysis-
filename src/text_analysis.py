@@ -188,14 +188,14 @@ def extract_topics(comments_df, text_col="text", n_topics=8, method="lda",
         vectorizer = CountVectorizer(
             max_features=max_features,
             stop_words="english",
-            min_df=5,
+            min_df=3,
             max_df=0.7,
         )
     else:
         vectorizer = TfidfVectorizer(
             max_features=max_features,
             stop_words="english",
-            min_df=5,
+            min_df=3,
             max_df=0.7,
         )
 
