@@ -206,7 +206,7 @@ def extract_topics(comments_df, text_col="text", n_topics=8, method="lda",
         model = LatentDirichletAllocation(
             n_components=n_topics,
             random_state=42,
-            max_iter=20,
+            max_iter=30,
             learning_method="online",
         )
     else:
