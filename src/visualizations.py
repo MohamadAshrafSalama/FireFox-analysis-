@@ -221,7 +221,7 @@ def plot_wordcloud(word_freq, title="Most Common Words", ax=None):
         width=800,
         height=400,
         background_color="white",
-        max_words=150,
+        max_words=200,
         colormap="viridis",
     ).generate_from_frequencies(word_freq)
 
