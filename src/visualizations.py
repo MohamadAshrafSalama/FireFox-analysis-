@@ -251,7 +251,7 @@ def plot_activity_heatmap(comments_df, date_col="created"):
     pivot = pivot.reindex(day_order)
 
     fig, ax = plt.subplots(figsize=(14, 5))
-    sns.heatmap(pivot, cmap="YlOrRd", ax=ax, linewidths=0.5)
+    sns.heatmap(pivot, cmap="YlOrRd", ax=ax, linewidths=0.3)
     ax.set_title("Comment Activity by Day of Week and Hour (UTC)")
     ax.set_xlabel("Hour of Day")
     ax.set_ylabel("")
