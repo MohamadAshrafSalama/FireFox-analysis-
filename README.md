@@ -59,4 +59,4 @@ jupyter notebook notebooks/firefox_analysis.ipynb
 
 ## License
 
-MIT
+MIT License
