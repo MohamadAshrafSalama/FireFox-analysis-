@@ -153,7 +153,7 @@ def analyze_sentiment(comments_df, text_col="text"):
 
 
 def extract_topics(comments_df, text_col="text", n_topics=8, method="lda",
-                   max_features=3000, n_top_words=15):
+                   max_features=3000, n_top_words=20):
     """
     Extract topics from comments using LDA or NMF.
 
