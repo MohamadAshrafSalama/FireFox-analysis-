@@ -104,10 +104,10 @@ def plot_sentiment_trend(comments_df, date_col="created", polarity_col="polarity
 
     ax.plot(weekly.index, weekly.values, alpha=0.4, color=PALETTE[2], linewidth=1)
 
-    # 4-period rolling average
-    rolling = weekly.rolling(4, center=True).mean()
+    # 3-period rolling average
+    rolling = weekly.rolling(3, center=True).mean()
     ax.plot(rolling.index, rolling.values, color=PALETTE[2], linewidth=2,
-            label="4-week rolling mean")
+            label="3-week rolling mean")
 
     ax.axhline(0, color="gray", linestyle="--", alpha=0.5)
     ax.set_title("Sentiment Trend Over Time")
