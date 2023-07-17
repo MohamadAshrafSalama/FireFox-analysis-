@@ -188,8 +188,8 @@ def plot_comment_length_dist(comments_df, text_col="text", ax=None):
         fig, ax = plt.subplots(figsize=(10, 5))
 
     lengths = comments_df[text_col].fillna("").str.split().str.len()
-    # cap at 99th percentile for readability
-    cap = int(lengths.quantile(0.99))
+    # cap at 98th percentile for readability
+    cap = int(lengths.quantile(0.98))
     lengths_capped = lengths[lengths <= cap]
 
     ax.hist(lengths_capped, bins=60, color=PALETTE[4], alpha=0.7, edgecolor="white")
