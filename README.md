@@ -54,7 +54,7 @@ jupyter notebook notebooks/firefox_analysis.ipynb
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.9+
 - See `requirements.txt` for package dependencies
 
 ## License
