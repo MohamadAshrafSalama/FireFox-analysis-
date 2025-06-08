@@ -54,4 +54,5 @@ local_settings.py
 *.db
 *.sqlite3
 
-# Firefox repo (explicitly excluded) 
+# Firefox repo (explicitly excluded)
+firefox-repo/
