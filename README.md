@@ -5,10 +5,12 @@ This repository contains a data analysis and exploration project using Jupyter n
 
 ## Prerequisites
 
-Before running this project, you need to:
+Before running this project, ensure you have:
 
-1. Clone this repository
-2. Clone the Firefox repository (required for analysis):
+1. Python 3.8 or higher installed
+2. Git installed
+3. Clone this repository
+4. Clone the Firefox repository (required for analysis):
 ```bash
 git clone https://github.com/mozilla/gecko-dev.git firefox-repo
 ```
@@ -61,6 +63,7 @@ jupyter notebook
 
 ## Environment Variables
 Create a `.env` file based on `.env.example` and fill in your credentials:
+- `GITHUB_TOKEN`: Token used for GitHub API access
 - `API_KEY`: Your API key (if needed)
 - Add other environment variables as needed
 
