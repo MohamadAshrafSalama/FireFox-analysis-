@@ -1,7 +1,7 @@
-# Mozela Project
+# Mozilla Firefox Analysis
 
 ## Overview
-This repository contains a data analysis and exploration project using Jupyter notebooks. The project is structured to follow best practices in data science and software development.
+This repository contains scripts and notebooks used to explore the Mozilla Firefox source code repository.  It includes commit statistics, bug tracker comments and Phabricator review data to help understand development activity over time.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ git clone https://github.com/mozilla/gecko-dev.git firefox-repo
 
 ## Project Structure
 ```
-mozela/
+firefox-analysis/
 ├── .env.example          # Example environment variables
 ├── .gitignore           # Git ignore file
 ├── README.md            # This file
@@ -31,8 +31,8 @@ mozela/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mozela.git
-cd mozela
+git clone https://github.com/yourusername/firefox-analysis.git
+cd firefox-analysis
 ```
 
 2. Clone the Firefox repository (required):
@@ -56,7 +56,12 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-6. Start Jupyter Notebook:
+6. Run the repository analysis script (optional):
+```bash
+./analyze_repo.sh firefox-repo commit_data.json
+```
+
+7. Start Jupyter Notebook:
 ```bash
 jupyter notebook
 ```

@@ -1,6 +1,6 @@
-# Getting Started with Mozela
+# Getting Started with Firefox Analysis
 
-This guide will help you get started with the Mozela project and make the most of its features.
+This guide explains how to set up the Firefox Analysis project and make the most of its features.
 
 ## Prerequisites
 
@@ -16,8 +16,8 @@ Follow these steps to set up your development environment:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/mozela.git
-   cd mozela
+   git clone https://github.com/yourusername/firefox-analysis.git
+   cd firefox-analysis
    ```
 
 2. **Set Up Virtual Environment**
@@ -37,6 +37,19 @@ Follow these steps to set up your development environment:
 - `requirements.txt`: Python package dependencies
 - `.env`: Environment variables (create from .env.example)
 - `docs/`: Documentation files
+- `analyze_repo.sh`: Shell script used to generate commit data from the Firefox repository
+
+## Running the Analysis
+
+Once you have cloned both this repository and the Firefox source, you can create commit statistics with:
+```bash
+./analyze_repo.sh ../path/to/firefox-repo commit_data.json
+```
+
+After generating the data, run the Python analysis script:
+```bash
+python firefox_analysis.py
+```
 
 ## Best Practices
 
